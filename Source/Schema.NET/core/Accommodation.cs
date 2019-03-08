@@ -24,7 +24,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "amenityFeature", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override OneOrMany<LocationFeatureSpecification>? AmenityFeature { get; set; }
+        public override OneOrMany<LocationFeatureSpecification> AmenityFeature { get; set; }
 
         /// <summary>
         /// The size of the accommodation, e.g. in square meter or squarefoot.
@@ -32,7 +32,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "floorSize", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<QuantitativeValue>? FloorSize { get; set; }
+        public OneOrMany<QuantitativeValue> FloorSize { get; set; }
 
         /// <summary>
         /// The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.
@@ -40,20 +40,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "numberOfRooms", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public virtual Values<int?, QuantitativeValue>? NumberOfRooms { get; set; }
+        public virtual Values<int?, QuantitativeValue> NumberOfRooms { get; set; }
 
         /// <summary>
         /// Indications regarding the permitted usage of the accommodation.
         /// </summary>
         [DataMember(Name = "permittedUsage", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PermittedUsage { get; set; }
+        public OneOrMany<string> PermittedUsage { get; set; }
 
         /// <summary>
         /// Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.
         /// </summary>
         [DataMember(Name = "petsAllowed", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<bool?, string>? PetsAllowed { get; set; }
+        public Values<bool?, string> PetsAllowed { get; set; }
     }
 }

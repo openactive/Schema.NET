@@ -21,55 +21,55 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "adverseOutcome", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalEntity>? AdverseOutcome { get; set; }
+        public OneOrMany<MedicalEntity> AdverseOutcome { get; set; }
 
         /// <summary>
         /// A contraindication for this therapy.
         /// </summary>
         [DataMember(Name = "contraindication", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MedicalContraindication, string>? Contraindication { get; set; }
+        public Values<MedicalContraindication, string> Contraindication { get; set; }
 
         /// <summary>
         /// A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.
         /// </summary>
         [DataMember(Name = "indication", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalIndication>? Indication { get; set; }
+        public OneOrMany<MedicalIndication> Indication { get; set; }
 
         /// <summary>
         /// A description of the postoperative procedures, care, and/or followups for this device.
         /// </summary>
         [DataMember(Name = "postOp", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PostOp { get; set; }
+        public OneOrMany<string> PostOp { get; set; }
 
         /// <summary>
         /// A description of the workup, testing, and other preparations required before implanting this device.
         /// </summary>
         [DataMember(Name = "preOp", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PreOp { get; set; }
+        public OneOrMany<string> PreOp { get; set; }
 
         /// <summary>
         /// A description of the procedure involved in setting up, using, and/or installing the device.
         /// </summary>
         [DataMember(Name = "procedure", Order = 211)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Procedure { get; set; }
+        public OneOrMany<string> Procedure { get; set; }
 
         /// <summary>
         /// A goal towards an action is taken. Can be concrete or abstract.
         /// </summary>
         [DataMember(Name = "purpose", Order = 212)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MedicalDevicePurpose?, Thing>? Purpose { get; set; }
+        public Values<MedicalDevicePurpose?, Thing> Purpose { get; set; }
 
         /// <summary>
         /// A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.
         /// </summary>
         [DataMember(Name = "seriousAdverseOutcome", Order = 213)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalEntity>? SeriousAdverseOutcome { get; set; }
+        public OneOrMany<MedicalEntity> SeriousAdverseOutcome { get; set; }
     }
 }

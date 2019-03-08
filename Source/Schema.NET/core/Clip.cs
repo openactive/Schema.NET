@@ -21,48 +21,48 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "actor", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Person>? Actor { get; set; }
+        public OneOrMany<Person> Actor { get; set; }
 
         /// <summary>
         /// Position of the clip within an ordered group of clips.
         /// </summary>
         [DataMember(Name = "clipNumber", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, string>? ClipNumber { get; set; }
+        public Values<int?, string> ClipNumber { get; set; }
 
         /// <summary>
         /// A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.
         /// </summary>
         [DataMember(Name = "director", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Person>? Director { get; set; }
+        public OneOrMany<Person> Director { get; set; }
 
         /// <summary>
         /// The composer of the soundtrack.
         /// </summary>
         [DataMember(Name = "musicBy", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MusicGroup, Person>? MusicBy { get; set; }
+        public Values<MusicGroup, Person> MusicBy { get; set; }
 
         /// <summary>
         /// The episode to which this clip belongs.
         /// </summary>
         [DataMember(Name = "partOfEpisode", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Episode>? PartOfEpisode { get; set; }
+        public OneOrMany<Episode> PartOfEpisode { get; set; }
 
         /// <summary>
         /// The season to which this episode belongs.
         /// </summary>
         [DataMember(Name = "partOfSeason", Order = 211)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<CreativeWorkSeason>? PartOfSeason { get; set; }
+        public OneOrMany<CreativeWorkSeason> PartOfSeason { get; set; }
 
         /// <summary>
         /// The series to which this episode or season belongs.
         /// </summary>
         [DataMember(Name = "partOfSeries", Order = 212)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<CreativeWorkSeries>? PartOfSeries { get; set; }
+        public OneOrMany<CreativeWorkSeries> PartOfSeries { get; set; }
     }
 }

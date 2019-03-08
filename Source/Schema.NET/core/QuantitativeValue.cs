@@ -22,28 +22,28 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "additionalProperty", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<PropertyValue>? AdditionalProperty { get; set; }
+        public OneOrMany<PropertyValue> AdditionalProperty { get; set; }
 
         /// <summary>
         /// The upper value of some characteristic or property.
         /// </summary>
         [DataMember(Name = "maxValue", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<double?>? MaxValue { get; set; }
+        public OneOrMany<double?> MaxValue { get; set; }
 
         /// <summary>
         /// The lower value of some characteristic or property.
         /// </summary>
         [DataMember(Name = "minValue", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<double?>? MinValue { get; set; }
+        public OneOrMany<double?> MinValue { get; set; }
 
         /// <summary>
         /// The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.
         /// </summary>
         [DataMember(Name = "unitCode", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? UnitCode { get; set; }
+        public Values<string, Uri> UnitCode { get; set; }
 
         /// <summary>
         /// A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for
@@ -51,7 +51,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "unitText", Order = 310)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? UnitText { get; set; }
+        public OneOrMany<string> UnitText { get; set; }
 
         /// <summary>
         /// The value of the quantitative value or property value node.&lt;br/&gt;&lt;br/&gt;
@@ -62,13 +62,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "value", Order = 311)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<bool?, double?, StructuredValue, string>? Value { get; set; }
+        public Values<bool?, double?, StructuredValue, string> Value { get; set; }
 
         /// <summary>
         /// A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.
         /// </summary>
         [DataMember(Name = "valueReference", Order = 312)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<PropertyValue, QuantitativeValue, StructuredValue>? ValueReference { get; set; }
+        public Values<PropertyValue, QuantitativeValue, StructuredValue> ValueReference { get; set; }
     }
 }

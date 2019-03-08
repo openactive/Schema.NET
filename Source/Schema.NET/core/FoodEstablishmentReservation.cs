@@ -23,14 +23,14 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "endTime", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? EndTime { get; set; }
+        public OneOrMany<DateTimeOffset?> EndTime { get; set; }
 
         /// <summary>
         /// Number of people the reservation should accommodate.
         /// </summary>
         [DataMember(Name = "partySize", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, QuantitativeValue>? PartySize { get; set; }
+        public Values<int?, QuantitativeValue> PartySize { get; set; }
 
         /// <summary>
         /// The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from &lt;em&gt;January&lt;/em&gt; to December.&lt;br/&gt;&lt;br/&gt;
@@ -38,6 +38,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "startTime", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? StartTime { get; set; }
+        public OneOrMany<DateTimeOffset?> StartTime { get; set; }
     }
 }

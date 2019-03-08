@@ -21,20 +21,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "availableService", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MedicalProcedure, MedicalTest, MedicalTherapy>? AvailableService { get; set; }
+        public Values<MedicalProcedure, MedicalTest, MedicalTherapy> AvailableService { get; set; }
 
         /// <summary>
         /// A hospital with which the physician or office is affiliated.
         /// </summary>
         [DataMember(Name = "hospitalAffiliation", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Hospital>? HospitalAffiliation { get; set; }
+        public OneOrMany<Hospital> HospitalAffiliation { get; set; }
 
         /// <summary>
         /// A medical specialty of the provider.
         /// </summary>
         [DataMember(Name = "medicalSpecialty", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override OneOrMany<MedicalSpecialty?>? MedicalSpecialty { get; set; }
+        public override OneOrMany<MedicalSpecialty?> MedicalSpecialty { get; set; }
     }
 }

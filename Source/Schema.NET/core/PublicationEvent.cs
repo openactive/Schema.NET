@@ -21,20 +21,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "isAccessibleForFree", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override OneOrMany<bool?>? IsAccessibleForFree { get; set; }
+        public override OneOrMany<bool?> IsAccessibleForFree { get; set; }
 
         /// <summary>
         /// An agent associated with the publication event.
         /// </summary>
         [DataMember(Name = "publishedBy", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Organization, Person>? PublishedBy { get; set; }
+        public Values<Organization, Person> PublishedBy { get; set; }
 
         /// <summary>
         /// A broadcast service associated with the publication event.
         /// </summary>
         [DataMember(Name = "publishedOn", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<BroadcastService>? PublishedOn { get; set; }
+        public OneOrMany<BroadcastService> PublishedOn { get; set; }
     }
 }

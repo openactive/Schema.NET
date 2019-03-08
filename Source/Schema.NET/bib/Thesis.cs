@@ -21,6 +21,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "inSupportOf", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? InSupportOf { get; set; }
+        public OneOrMany<string> InSupportOf { get; set; }
     }
 }

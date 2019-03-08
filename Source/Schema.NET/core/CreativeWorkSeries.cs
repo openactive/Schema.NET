@@ -23,20 +23,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "issn", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Issn { get; set; }
+        public OneOrMany<string> Issn { get; set; }
 
         /// <summary>
         /// The start date and time of the item (in &lt;a href="http://en.wikipedia.org/wiki/ISO_8601"&gt;ISO 8601 date format&lt;/a&gt;).
         /// </summary>
         [DataMember(Name = "startDate", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? StartDate { get; set; }
+        public OneOrMany<DateTimeOffset?> StartDate { get; set; }
 
         /// <summary>
         /// The end date and time of the item (in &lt;a href="http://en.wikipedia.org/wiki/ISO_8601"&gt;ISO 8601 date format&lt;/a&gt;).
         /// </summary>
         [DataMember(Name = "endDate", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? EndDate { get; set; }
+        public OneOrMany<DateTimeOffset?> EndDate { get; set; }
     }
 }

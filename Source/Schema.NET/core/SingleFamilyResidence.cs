@@ -22,7 +22,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "numberOfRooms", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override Values<int?, QuantitativeValue>? NumberOfRooms { get; set; }
+        public override Values<int?, QuantitativeValue> NumberOfRooms { get; set; }
 
         /// <summary>
         /// The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).
@@ -30,6 +30,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "occupancy", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<QuantitativeValue>? Occupancy { get; set; }
+        public OneOrMany<QuantitativeValue> Occupancy { get; set; }
     }
 }

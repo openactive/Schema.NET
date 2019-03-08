@@ -25,13 +25,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "query", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Query { get; set; }
+        public OneOrMany<string> Query { get; set; }
 
         /// <summary>
         /// Gets or sets the query input search parameter.
         /// </summary>
         [DataMember(Name = "query-input", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, PropertyValueSpecification>? QueryInput { get; set; }
+        public Values<string, PropertyValueSpecification> QueryInput { get; set; }
     }
 }

@@ -21,41 +21,41 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "addressCountry", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Country, string>? AddressCountry { get; set; }
+        public Values<Country, string> AddressCountry { get; set; }
 
         /// <summary>
         /// The locality. For example, Mountain View.
         /// </summary>
         [DataMember(Name = "addressLocality", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? AddressLocality { get; set; }
+        public OneOrMany<string> AddressLocality { get; set; }
 
         /// <summary>
         /// The region. For example, CA.
         /// </summary>
         [DataMember(Name = "addressRegion", Order = 408)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? AddressRegion { get; set; }
+        public OneOrMany<string> AddressRegion { get; set; }
 
         /// <summary>
         /// The postal code. For example, 94043.
         /// </summary>
         [DataMember(Name = "postalCode", Order = 409)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PostalCode { get; set; }
+        public OneOrMany<string> PostalCode { get; set; }
 
         /// <summary>
         /// The post office box number for PO box addresses.
         /// </summary>
         [DataMember(Name = "postOfficeBoxNumber", Order = 410)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PostOfficeBoxNumber { get; set; }
+        public OneOrMany<string> PostOfficeBoxNumber { get; set; }
 
         /// <summary>
         /// The street address. For example, 1600 Amphitheatre Pkwy.
         /// </summary>
         [DataMember(Name = "streetAddress", Order = 411)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? StreetAddress { get; set; }
+        public OneOrMany<string> StreetAddress { get; set; }
     }
 }

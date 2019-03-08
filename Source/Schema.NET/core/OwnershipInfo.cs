@@ -21,27 +21,27 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "acquiredFrom", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Organization, Person>? AcquiredFrom { get; set; }
+        public Values<Organization, Person> AcquiredFrom { get; set; }
 
         /// <summary>
         /// The date and time of obtaining the product.
         /// </summary>
         [DataMember(Name = "ownedFrom", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? OwnedFrom { get; set; }
+        public OneOrMany<DateTimeOffset?> OwnedFrom { get; set; }
 
         /// <summary>
         /// The date and time of giving up ownership on the product.
         /// </summary>
         [DataMember(Name = "ownedThrough", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? OwnedThrough { get; set; }
+        public OneOrMany<DateTimeOffset?> OwnedThrough { get; set; }
 
         /// <summary>
         /// The product that this structured value is referring to.
         /// </summary>
         [DataMember(Name = "typeOfGood", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Product, Service>? TypeOfGood { get; set; }
+        public Values<Product, Service> TypeOfGood { get; set; }
     }
 }

@@ -22,41 +22,41 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "checkinTime", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? CheckinTime { get; set; }
+        public OneOrMany<DateTimeOffset?> CheckinTime { get; set; }
 
         /// <summary>
         /// The latest someone may check out of a lodging establishment.
         /// </summary>
         [DataMember(Name = "checkoutTime", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? CheckoutTime { get; set; }
+        public OneOrMany<DateTimeOffset?> CheckoutTime { get; set; }
 
         /// <summary>
         /// A full description of the lodging unit.
         /// </summary>
         [DataMember(Name = "lodgingUnitDescription", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? LodgingUnitDescription { get; set; }
+        public OneOrMany<string> LodgingUnitDescription { get; set; }
 
         /// <summary>
         /// Textual description of the unit type (including suite vs. room, size of bed, etc.).
         /// </summary>
         [DataMember(Name = "lodgingUnitType", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? LodgingUnitType { get; set; }
+        public OneOrMany<string> LodgingUnitType { get; set; }
 
         /// <summary>
         /// The number of adults staying in the unit.
         /// </summary>
         [DataMember(Name = "numAdults", Order = 310)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, QuantitativeValue>? NumAdults { get; set; }
+        public Values<int?, QuantitativeValue> NumAdults { get; set; }
 
         /// <summary>
         /// The number of children staying in the unit.
         /// </summary>
         [DataMember(Name = "numChildren", Order = 311)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, QuantitativeValue>? NumChildren { get; set; }
+        public Values<int?, QuantitativeValue> NumChildren { get; set; }
     }
 }

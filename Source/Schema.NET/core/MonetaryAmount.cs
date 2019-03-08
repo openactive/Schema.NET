@@ -22,35 +22,35 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "currency", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Currency { get; set; }
+        public OneOrMany<string> Currency { get; set; }
 
         /// <summary>
         /// The upper value of some characteristic or property.
         /// </summary>
         [DataMember(Name = "maxValue", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<double?>? MaxValue { get; set; }
+        public OneOrMany<double?> MaxValue { get; set; }
 
         /// <summary>
         /// The lower value of some characteristic or property.
         /// </summary>
         [DataMember(Name = "minValue", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<double?>? MinValue { get; set; }
+        public OneOrMany<double?> MinValue { get; set; }
 
         /// <summary>
         /// The date when the item becomes valid.
         /// </summary>
         [DataMember(Name = "validFrom", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? ValidFrom { get; set; }
+        public OneOrMany<DateTimeOffset?> ValidFrom { get; set; }
 
         /// <summary>
         /// The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.
         /// </summary>
         [DataMember(Name = "validThrough", Order = 310)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? ValidThrough { get; set; }
+        public OneOrMany<DateTimeOffset?> ValidThrough { get; set; }
 
         /// <summary>
         /// The value of the quantitative value or property value node.&lt;br/&gt;&lt;br/&gt;
@@ -61,6 +61,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "value", Order = 311)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<bool?, double?, StructuredValue, string>? Value { get; set; }
+        public Values<bool?, double?, StructuredValue, string> Value { get; set; }
     }
 }

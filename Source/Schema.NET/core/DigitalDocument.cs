@@ -21,6 +21,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "hasDigitalDocumentPermission", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DigitalDocumentPermission>? HasDigitalDocumentPermission { get; set; }
+        public OneOrMany<DigitalDocumentPermission> HasDigitalDocumentPermission { get; set; }
     }
 }

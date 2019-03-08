@@ -23,13 +23,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "geoMidpoint", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<GeoCoordinates>? GeoMidpoint { get; set; }
+        public OneOrMany<GeoCoordinates> GeoMidpoint { get; set; }
 
         /// <summary>
         /// Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).
         /// </summary>
         [DataMember(Name = "geoRadius", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, string>? GeoRadius { get; set; }
+        public Values<double?, string> GeoRadius { get; set; }
     }
 }

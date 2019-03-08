@@ -21,6 +21,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "dataFeedElement", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<DataFeedItem, string, Thing>? DataFeedElement { get; set; }
+        public Values<DataFeedItem, string, Thing> DataFeedElement { get; set; }
     }
 }

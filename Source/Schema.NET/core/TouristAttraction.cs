@@ -21,13 +21,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "availableLanguage", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Language, string>? AvailableLanguage { get; set; }
+        public Values<Language, string> AvailableLanguage { get; set; }
 
         /// <summary>
         /// Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc.
         /// </summary>
         [DataMember(Name = "touristType", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Audience, string>? TouristType { get; set; }
+        public Values<Audience, string> TouristType { get; set; }
     }
 }

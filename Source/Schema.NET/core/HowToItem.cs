@@ -21,6 +21,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "requiredQuantity", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, QuantitativeValue, string>? RequiredQuantity { get; set; }
+        public Values<double?, QuantitativeValue, string> RequiredQuantity { get; set; }
     }
 }

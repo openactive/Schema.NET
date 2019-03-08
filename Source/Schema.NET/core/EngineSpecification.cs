@@ -24,7 +24,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "engineDisplacement", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<QuantitativeValue>? EngineDisplacement { get; set; }
+        public OneOrMany<QuantitativeValue> EngineDisplacement { get; set; }
 
         /// <summary>
         /// The power of the vehicle's engine.
@@ -37,21 +37,21 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "enginePower", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<QuantitativeValue>? EnginePower { get; set; }
+        public OneOrMany<QuantitativeValue> EnginePower { get; set; }
 
         /// <summary>
         /// The type of engine or engines powering the vehicle.
         /// </summary>
         [DataMember(Name = "engineType", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? EngineType { get; set; }
+        public Values<string, Uri> EngineType { get; set; }
 
         /// <summary>
         /// The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.
         /// </summary>
         [DataMember(Name = "fuelType", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? FuelType { get; set; }
+        public Values<string, Uri> FuelType { get; set; }
 
         /// <summary>
         /// The torque (turning force) of the vehicle's engine.&lt;br/&gt;&lt;br/&gt;
@@ -63,6 +63,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "torque", Order = 310)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<QuantitativeValue>? Torque { get; set; }
+        public OneOrMany<QuantitativeValue> Torque { get; set; }
     }
 }

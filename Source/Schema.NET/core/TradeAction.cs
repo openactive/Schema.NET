@@ -28,13 +28,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "price", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<decimal?, string>? Price { get; set; }
+        public Values<decimal?, string> Price { get; set; }
 
         /// <summary>
         /// One or more detailed price specifications, indicating the unit price and delivery or payment charges.
         /// </summary>
         [DataMember(Name = "priceSpecification", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<PriceSpecification>? PriceSpecification { get; set; }
+        public OneOrMany<PriceSpecification> PriceSpecification { get; set; }
     }
 }

@@ -21,13 +21,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "baseSalary", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MonetaryAmount, decimal?, PriceSpecification>? BaseSalary { get; set; }
+        public Values<MonetaryAmount, decimal?, PriceSpecification> BaseSalary { get; set; }
 
         /// <summary>
         /// The currency (coded using &lt;a href="http://en.wikipedia.org/wiki/ISO_4217"&gt;ISO 4217&lt;/a&gt; ) used for the main salary information in this job posting or for this employee.
         /// </summary>
         [DataMember(Name = "salaryCurrency", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? SalaryCurrency { get; set; }
+        public OneOrMany<string> SalaryCurrency { get; set; }
     }
 }

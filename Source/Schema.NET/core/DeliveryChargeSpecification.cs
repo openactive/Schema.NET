@@ -21,14 +21,14 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "appliesToDeliveryMethod", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DeliveryMethod?>? AppliesToDeliveryMethod { get; set; }
+        public OneOrMany<DeliveryMethod?> AppliesToDeliveryMethod { get; set; }
 
         /// <summary>
         /// The geographic area where a service or offered item is provided.
         /// </summary>
         [DataMember(Name = "areaServed", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<AdministrativeArea, GeoShape, Place, string>? AreaServed { get; set; }
+        public Values<AdministrativeArea, GeoShape, Place, string> AreaServed { get; set; }
 
         /// <summary>
         /// The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.&lt;br/&gt;&lt;br/&gt;
@@ -36,7 +36,7 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "eligibleRegion", Order = 408)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<GeoShape, Place, string>? EligibleRegion { get; set; }
+        public Values<GeoShape, Place, string> EligibleRegion { get; set; }
 
         /// <summary>
         /// The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.&lt;br/&gt;&lt;br/&gt;
@@ -44,6 +44,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "ineligibleRegion", Order = 409)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<GeoShape, Place, string>? IneligibleRegion { get; set; }
+        public Values<GeoShape, Place, string> IneligibleRegion { get; set; }
     }
 }

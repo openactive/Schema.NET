@@ -21,6 +21,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "endorsee", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Organization, Person>? Endorsee { get; set; }
+        public Values<Organization, Person> Endorsee { get; set; }
     }
 }

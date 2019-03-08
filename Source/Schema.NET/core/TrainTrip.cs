@@ -21,41 +21,41 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "arrivalPlatform", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? ArrivalPlatform { get; set; }
+        public OneOrMany<string> ArrivalPlatform { get; set; }
 
         /// <summary>
         /// The station where the train trip ends.
         /// </summary>
         [DataMember(Name = "arrivalStation", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<TrainStation>? ArrivalStation { get; set; }
+        public OneOrMany<TrainStation> ArrivalStation { get; set; }
 
         /// <summary>
         /// The platform from which the train departs.
         /// </summary>
         [DataMember(Name = "departurePlatform", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? DeparturePlatform { get; set; }
+        public OneOrMany<string> DeparturePlatform { get; set; }
 
         /// <summary>
         /// The station from which the train departs.
         /// </summary>
         [DataMember(Name = "departureStation", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<TrainStation>? DepartureStation { get; set; }
+        public OneOrMany<TrainStation> DepartureStation { get; set; }
 
         /// <summary>
         /// The name of the train (e.g. The Orient Express).
         /// </summary>
         [DataMember(Name = "trainName", Order = 310)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? TrainName { get; set; }
+        public OneOrMany<string> TrainName { get; set; }
 
         /// <summary>
         /// The unique identifier for the train.
         /// </summary>
         [DataMember(Name = "trainNumber", Order = 311)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? TrainNumber { get; set; }
+        public OneOrMany<string> TrainNumber { get; set; }
     }
 }

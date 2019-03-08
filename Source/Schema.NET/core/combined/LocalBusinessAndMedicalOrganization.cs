@@ -22,28 +22,28 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "currenciesAccepted", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? CurrenciesAccepted { get; set; }
+        public OneOrMany<string> CurrenciesAccepted { get; set; }
 
         /// <summary>
         /// Name or unique ID of network. (Networks are often reused across different insurance plans).
         /// </summary>
         [DataMember(Name = "healthPlanNetworkId", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? HealthPlanNetworkId { get; set; }
+        public OneOrMany<string> HealthPlanNetworkId { get; set; }
 
         /// <summary>
         /// Whether the provider is accepting new patients.
         /// </summary>
         [DataMember(Name = "isAcceptingNewPatients", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<bool?>? IsAcceptingNewPatients { get; set; }
+        public OneOrMany<bool?> IsAcceptingNewPatients { get; set; }
 
         /// <summary>
         /// A medical specialty of the provider.
         /// </summary>
         [DataMember(Name = "medicalSpecialty", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalSpecialty?>? MedicalSpecialty { get; set; }
+        public OneOrMany<MedicalSpecialty?> MedicalSpecialty { get; set; }
 
         /// <summary>
         /// The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.&lt;br/&gt;&lt;br/&gt;
@@ -56,20 +56,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "openingHours", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? OpeningHours { get; set; }
+        public OneOrMany<string> OpeningHours { get; set; }
 
         /// <summary>
         /// Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.
         /// </summary>
         [DataMember(Name = "paymentAccepted", Order = 211)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PaymentAccepted { get; set; }
+        public OneOrMany<string> PaymentAccepted { get; set; }
 
         /// <summary>
         /// The price range of the business, for example &lt;code&gt;$$$&lt;/code&gt;.
         /// </summary>
         [DataMember(Name = "priceRange", Order = 212)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? PriceRange { get; set; }
+        public OneOrMany<string> PriceRange { get; set; }
     }
 }

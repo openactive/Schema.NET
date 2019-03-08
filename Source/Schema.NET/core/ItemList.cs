@@ -23,20 +23,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "itemListElement", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<ListItem, string, Thing>? ItemListElement { get; set; }
+        public Values<ListItem, string, Thing> ItemListElement { get; set; }
 
         /// <summary>
         /// Type of ordering (e.g. Ascending, Descending, Unordered).
         /// </summary>
         [DataMember(Name = "itemListOrder", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<ItemListOrderType?, string>? ItemListOrder { get; set; }
+        public Values<ItemListOrderType?, string> ItemListOrder { get; set; }
 
         /// <summary>
         /// The number of items in an ItemList. Note that some descriptions might not fully describe all items in a list (e.g., multi-page pagination); in such cases, the numberOfItems would be for the entire list.
         /// </summary>
         [DataMember(Name = "numberOfItems", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<int?>? NumberOfItems { get; set; }
+        public OneOrMany<int?> NumberOfItems { get; set; }
     }
 }

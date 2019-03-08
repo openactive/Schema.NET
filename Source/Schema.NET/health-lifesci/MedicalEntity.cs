@@ -21,41 +21,41 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "guideline", Order = 106)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalGuideline>? Guideline { get; set; }
+        public OneOrMany<MedicalGuideline> Guideline { get; set; }
 
         /// <summary>
         /// The drug or supplement's legal status, including any controlled substance schedules that apply.
         /// </summary>
         [DataMember(Name = "legalStatus", Order = 107)]
         [JsonConverter(typeof(ValuesConverter))]
-        public virtual Values<DrugLegalStatus, MedicalEnumeration?, string>? LegalStatus { get; set; }
+        public virtual Values<DrugLegalStatus, MedicalEnumeration?, string> LegalStatus { get; set; }
 
         /// <summary>
         /// The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.
         /// </summary>
         [DataMember(Name = "medicineSystem", Order = 108)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicineSystem?>? MedicineSystem { get; set; }
+        public OneOrMany<MedicineSystem?> MedicineSystem { get; set; }
 
         /// <summary>
         /// If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.
         /// </summary>
         [DataMember(Name = "recognizingAuthority", Order = 109)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Organization>? RecognizingAuthority { get; set; }
+        public OneOrMany<Organization> RecognizingAuthority { get; set; }
 
         /// <summary>
         /// If applicable, a medical specialty in which this entity is relevant.
         /// </summary>
         [DataMember(Name = "relevantSpecialty", Order = 110)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalSpecialty?>? RelevantSpecialty { get; set; }
+        public OneOrMany<MedicalSpecialty?> RelevantSpecialty { get; set; }
 
         /// <summary>
         /// A medical study or trial related to this entity.
         /// </summary>
         [DataMember(Name = "study", Order = 111)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalStudy>? Study { get; set; }
+        public OneOrMany<MedicalStudy> Study { get; set; }
     }
 }

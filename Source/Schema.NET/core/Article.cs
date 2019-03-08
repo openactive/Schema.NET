@@ -22,42 +22,42 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "articleBody", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? ArticleBody { get; set; }
+        public OneOrMany<string> ArticleBody { get; set; }
 
         /// <summary>
         /// Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.
         /// </summary>
         [DataMember(Name = "articleSection", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? ArticleSection { get; set; }
+        public OneOrMany<string> ArticleSection { get; set; }
 
         /// <summary>
         /// For an &lt;a class="localLink" href="http://schema.org/Article"&gt;Article&lt;/a&gt;, typically a &lt;a class="localLink" href="http://schema.org/NewsArticle"&gt;NewsArticle&lt;/a&gt;, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc.
         /// </summary>
         [DataMember(Name = "backstory", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<CreativeWork, string>? Backstory { get; set; }
+        public Values<CreativeWork, string> Backstory { get; set; }
 
         /// <summary>
         /// The page on which the work ends; for example "138" or "xvi".
         /// </summary>
         [DataMember(Name = "pageEnd", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, string>? PageEnd { get; set; }
+        public Values<int?, string> PageEnd { get; set; }
 
         /// <summary>
         /// The page on which the work starts; for example "135" or "xiii".
         /// </summary>
         [DataMember(Name = "pageStart", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, string>? PageStart { get; set; }
+        public Values<int?, string> PageStart { get; set; }
 
         /// <summary>
         /// Any description of pages that is not separated into pageStart and pageEnd; for example, "1-6, 9, 55" or "10-12, 46-49".
         /// </summary>
         [DataMember(Name = "pagination", Order = 211)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Pagination { get; set; }
+        public OneOrMany<string> Pagination { get; set; }
 
         /// <summary>
         /// Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be usefully spoken in particular circumstances; the 'speakable' property serves to indicate the parts most likely to be generally useful for speech.&lt;br/&gt;&lt;br/&gt;
@@ -70,13 +70,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "speakable", Order = 212)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Uri>? Speakable { get; set; }
+        public OneOrMany<Uri> Speakable { get; set; }
 
         /// <summary>
         /// The number of words in the text of the Article.
         /// </summary>
         [DataMember(Name = "wordCount", Order = 213)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<int?>? WordCount { get; set; }
+        public OneOrMany<int?> WordCount { get; set; }
     }
 }

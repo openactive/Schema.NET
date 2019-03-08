@@ -21,13 +21,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "availableService", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MedicalProcedure, MedicalTest, MedicalTherapy>? AvailableService { get; set; }
+        public Values<MedicalProcedure, MedicalTest, MedicalTherapy> AvailableService { get; set; }
 
         /// <summary>
         /// A medical specialty of the provider.
         /// </summary>
         [DataMember(Name = "medicalSpecialty", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override OneOrMany<MedicalSpecialty?>? MedicalSpecialty { get; set; }
+        public override OneOrMany<MedicalSpecialty?> MedicalSpecialty { get; set; }
     }
 }

@@ -22,20 +22,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "partySize", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<int?, QuantitativeValue>? PartySize { get; set; }
+        public Values<int?, QuantitativeValue> PartySize { get; set; }
 
         /// <summary>
         /// Where a taxi will pick up a passenger or a rental car can be picked up.
         /// </summary>
         [DataMember(Name = "pickupLocation", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Place>? PickupLocation { get; set; }
+        public OneOrMany<Place> PickupLocation { get; set; }
 
         /// <summary>
         /// When a taxi will pickup a passenger or a rental car can be picked up.
         /// </summary>
         [DataMember(Name = "pickupTime", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DateTimeOffset?>? PickupTime { get; set; }
+        public OneOrMany<DateTimeOffset?> PickupTime { get; set; }
     }
 }

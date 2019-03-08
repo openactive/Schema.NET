@@ -21,27 +21,27 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "highPrice", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<decimal?, string>? HighPrice { get; set; }
+        public Values<decimal?, string> HighPrice { get; set; }
 
         /// <summary>
         /// The lowest price of all offers available.
         /// </summary>
         [DataMember(Name = "lowPrice", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<decimal?, string>? LowPrice { get; set; }
+        public Values<decimal?, string> LowPrice { get; set; }
 
         /// <summary>
         /// The number of offers for the product.
         /// </summary>
         [DataMember(Name = "offerCount", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<int?>? OfferCount { get; set; }
+        public OneOrMany<int?> OfferCount { get; set; }
 
         /// <summary>
         /// An offer to provide this item&amp;#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.
         /// </summary>
         [DataMember(Name = "offers", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Offer>? Offers { get; set; }
+        public OneOrMany<Offer> Offers { get; set; }
     }
 }

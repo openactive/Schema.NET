@@ -21,27 +21,27 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "menuAddOn", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MenuItem, MenuSection>? MenuAddOn { get; set; }
+        public Values<MenuItem, MenuSection> MenuAddOn { get; set; }
 
         /// <summary>
         /// Nutrition information about the recipe or menu item.
         /// </summary>
         [DataMember(Name = "nutrition", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<NutritionInformation>? Nutrition { get; set; }
+        public OneOrMany<NutritionInformation> Nutrition { get; set; }
 
         /// <summary>
         /// An offer to provide this item&amp;#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.
         /// </summary>
         [DataMember(Name = "offers", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Offer>? Offers { get; set; }
+        public OneOrMany<Offer> Offers { get; set; }
 
         /// <summary>
         /// Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc.
         /// </summary>
         [DataMember(Name = "suitableForDiet", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<RestrictedDiet?>? SuitableForDiet { get; set; }
+        public OneOrMany<RestrictedDiet?> SuitableForDiet { get; set; }
     }
 }

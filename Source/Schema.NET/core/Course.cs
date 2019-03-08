@@ -21,27 +21,27 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "courseCode", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? CourseCode { get; set; }
+        public OneOrMany<string> CourseCode { get; set; }
 
         /// <summary>
         /// Requirements for taking the Course. May be completion of another &lt;a class="localLink" href="http://schema.org/Course"&gt;Course&lt;/a&gt; or a textual description like "permission of instructor". Requirements may be a pre-requisite competency, referenced using &lt;a class="localLink" href="http://schema.org/AlignmentObject"&gt;AlignmentObject&lt;/a&gt;.
         /// </summary>
         [DataMember(Name = "coursePrerequisites", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<AlignmentObject, Course, string>? CoursePrerequisites { get; set; }
+        public Values<AlignmentObject, Course, string> CoursePrerequisites { get; set; }
 
         /// <summary>
         /// A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course.
         /// </summary>
         [DataMember(Name = "educationalCredentialAwarded", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? EducationalCredentialAwarded { get; set; }
+        public Values<string, Uri> EducationalCredentialAwarded { get; set; }
 
         /// <summary>
         /// An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.
         /// </summary>
         [DataMember(Name = "hasCourseInstance", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<CourseInstance>? HasCourseInstance { get; set; }
+        public OneOrMany<CourseInstance> HasCourseInstance { get; set; }
     }
 }

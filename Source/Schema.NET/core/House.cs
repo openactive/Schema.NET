@@ -22,6 +22,6 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "numberOfRooms", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public override Values<int?, QuantitativeValue>? NumberOfRooms { get; set; }
+        public override Values<int?, QuantitativeValue> NumberOfRooms { get; set; }
     }
 }

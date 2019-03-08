@@ -21,13 +21,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "grantee", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Audience, ContactPoint, Organization, Person>? Grantee { get; set; }
+        public Values<Audience, ContactPoint, Organization, Person> Grantee { get; set; }
 
         /// <summary>
         /// The type of permission granted the person, organization, or audience.
         /// </summary>
         [DataMember(Name = "permissionType", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DigitalDocumentPermissionType?>? PermissionType { get; set; }
+        public OneOrMany<DigitalDocumentPermissionType?> PermissionType { get; set; }
     }
 }

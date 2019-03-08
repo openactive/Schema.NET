@@ -21,20 +21,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "originatesFrom", Order = 406)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Vessel>? OriginatesFrom { get; set; }
+        public OneOrMany<Vessel> OriginatesFrom { get; set; }
 
         /// <summary>
         /// The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.
         /// </summary>
         [DataMember(Name = "regionDrained", Order = 407)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<AnatomicalStructure, AnatomicalSystem>? RegionDrained { get; set; }
+        public Values<AnatomicalStructure, AnatomicalSystem> RegionDrained { get; set; }
 
         /// <summary>
         /// The vasculature the lymphatic structure runs, or efferents, to.
         /// </summary>
         [DataMember(Name = "runsTo", Order = 408)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Vessel>? RunsTo { get; set; }
+        public OneOrMany<Vessel> RunsTo { get; set; }
     }
 }

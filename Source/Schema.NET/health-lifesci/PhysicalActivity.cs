@@ -21,20 +21,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "associatedAnatomy", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<AnatomicalStructure, AnatomicalSystem, SuperficialAnatomy>? AssociatedAnatomy { get; set; }
+        public Values<AnatomicalStructure, AnatomicalSystem, SuperficialAnatomy> AssociatedAnatomy { get; set; }
 
         /// <summary>
         /// The characteristics of associated patients, such as age, gender, race etc.
         /// </summary>
         [DataMember(Name = "epidemiology", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Epidemiology { get; set; }
+        public OneOrMany<string> Epidemiology { get; set; }
 
         /// <summary>
         /// Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.
         /// </summary>
         [DataMember(Name = "pathophysiology", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Pathophysiology { get; set; }
+        public OneOrMany<string> Pathophysiology { get; set; }
     }
 }

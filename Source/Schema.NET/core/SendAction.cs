@@ -25,13 +25,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "deliveryMethod", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DeliveryMethod?>? DeliveryMethod { get; set; }
+        public OneOrMany<DeliveryMethod?> DeliveryMethod { get; set; }
 
         /// <summary>
         /// A sub property of participant. The participant who is at the receiving end of the action.
         /// </summary>
         [DataMember(Name = "recipient", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Audience, ContactPoint, Organization, Person>? Recipient { get; set; }
+        public Values<Audience, ContactPoint, Organization, Person> Recipient { get; set; }
     }
 }

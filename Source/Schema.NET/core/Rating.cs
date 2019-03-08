@@ -21,34 +21,34 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "author", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Organization, Person>? Author { get; set; }
+        public Values<Organization, Person> Author { get; set; }
 
         /// <summary>
         /// The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.
         /// </summary>
         [DataMember(Name = "bestRating", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, string>? BestRating { get; set; }
+        public Values<double?, string> BestRating { get; set; }
 
         /// <summary>
         /// The rating for the content.
         /// </summary>
         [DataMember(Name = "ratingValue", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, string>? RatingValue { get; set; }
+        public Values<double?, string> RatingValue { get; set; }
 
         /// <summary>
         /// This Review or Rating is relevant to this part or facet of the itemReviewed.
         /// </summary>
         [DataMember(Name = "reviewAspect", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? ReviewAspect { get; set; }
+        public OneOrMany<string> ReviewAspect { get; set; }
 
         /// <summary>
         /// The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
         /// </summary>
         [DataMember(Name = "worstRating", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, string>? WorstRating { get; set; }
+        public Values<double?, string> WorstRating { get; set; }
     }
 }

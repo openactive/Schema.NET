@@ -21,21 +21,21 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "distribution", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DataDownload>? Distribution { get; set; }
+        public OneOrMany<DataDownload> Distribution { get; set; }
 
         /// <summary>
         /// A data catalog which contains this dataset.
         /// </summary>
         [DataMember(Name = "includedInDataCatalog", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<DataCatalog>? IncludedInDataCatalog { get; set; }
+        public OneOrMany<DataCatalog> IncludedInDataCatalog { get; set; }
 
         /// <summary>
         /// The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.
         /// </summary>
         [DataMember(Name = "issn", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Issn { get; set; }
+        public OneOrMany<string> Issn { get; set; }
 
         /// <summary>
         /// A technique or technology used in a &lt;a class="localLink" href="http://schema.org/Dataset"&gt;Dataset&lt;/a&gt; (or &lt;a class="localLink" href="http://schema.org/DataDownload"&gt;DataDownload&lt;/a&gt;, &lt;a class="localLink" href="http://schema.org/DataCatalog"&gt;DataCatalog&lt;/a&gt;),
@@ -46,13 +46,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "measurementTechnique", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? MeasurementTechnique { get; set; }
+        public Values<string, Uri> MeasurementTechnique { get; set; }
 
         /// <summary>
         /// The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
         /// </summary>
         [DataMember(Name = "variableMeasured", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<PropertyValue, string>? VariableMeasured { get; set; }
+        public Values<PropertyValue, string> VariableMeasured { get; set; }
     }
 }

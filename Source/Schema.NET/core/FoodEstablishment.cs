@@ -21,27 +21,27 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "acceptsReservations", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<bool?, string, Uri>? AcceptsReservations { get; set; }
+        public Values<bool?, string, Uri> AcceptsReservations { get; set; }
 
         /// <summary>
         /// Either the actual menu as a structured representation, as text, or a URL of the menu.
         /// </summary>
         [DataMember(Name = "hasMenu", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<Menu, string, Uri>? HasMenu { get; set; }
+        public Values<Menu, string, Uri> HasMenu { get; set; }
 
         /// <summary>
         /// The cuisine of the restaurant.
         /// </summary>
         [DataMember(Name = "servesCuisine", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? ServesCuisine { get; set; }
+        public OneOrMany<string> ServesCuisine { get; set; }
 
         /// <summary>
         /// An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies. Use the author property to indicate the rating organization, e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
         /// </summary>
         [DataMember(Name = "starRating", Order = 309)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Rating>? StarRating { get; set; }
+        public OneOrMany<Rating> StarRating { get; set; }
     }
 }

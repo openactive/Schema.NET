@@ -21,41 +21,41 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "healthCondition", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalCondition>? HealthCondition { get; set; }
+        public OneOrMany<MedicalCondition> HealthCondition { get; set; }
 
         /// <summary>
         /// Expected or actual outcomes of the study.
         /// </summary>
         [DataMember(Name = "outcome", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<MedicalEntity, string>? Outcome { get; set; }
+        public Values<MedicalEntity, string> Outcome { get; set; }
 
         /// <summary>
         /// Any characteristics of the population used in the study, e.g. 'males under 65'.
         /// </summary>
         [DataMember(Name = "population", Order = 208)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<string>? Population { get; set; }
+        public OneOrMany<string> Population { get; set; }
 
         /// <summary>
         /// The status of the study (enumerated).
         /// </summary>
         [DataMember(Name = "status", Order = 209)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<EventStatusType?, MedicalStudyStatus?, string>? Status { get; set; }
+        public Values<EventStatusType?, MedicalStudyStatus?, string> Status { get; set; }
 
         /// <summary>
         /// The location in which the study is taking/took place.
         /// </summary>
         [DataMember(Name = "studyLocation", Order = 210)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<AdministrativeArea>? StudyLocation { get; set; }
+        public OneOrMany<AdministrativeArea> StudyLocation { get; set; }
 
         /// <summary>
         /// A subject of the study, i.e. one of the medical conditions, therapies, devices, drugs, etc. investigated by the study.
         /// </summary>
         [DataMember(Name = "studySubject", Order = 211)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<MedicalEntity>? StudySubject { get; set; }
+        public OneOrMany<MedicalEntity> StudySubject { get; set; }
     }
 }

@@ -21,20 +21,20 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "annualPercentageRate", Order = 306)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, QuantitativeValue>? AnnualPercentageRate { get; set; }
+        public Values<double?, QuantitativeValue> AnnualPercentageRate { get; set; }
 
         /// <summary>
         /// Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.
         /// </summary>
         [DataMember(Name = "feesAndCommissionsSpecification", Order = 307)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? FeesAndCommissionsSpecification { get; set; }
+        public Values<string, Uri> FeesAndCommissionsSpecification { get; set; }
 
         /// <summary>
         /// The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.
         /// </summary>
         [DataMember(Name = "interestRate", Order = 308)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<double?, QuantitativeValue>? InterestRate { get; set; }
+        public Values<double?, QuantitativeValue> InterestRate { get; set; }
     }
 }

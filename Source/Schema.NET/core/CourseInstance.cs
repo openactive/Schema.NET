@@ -21,13 +21,13 @@ namespace Schema.NET
         /// </summary>
         [DataMember(Name = "courseMode", Order = 206)]
         [JsonConverter(typeof(ValuesConverter))]
-        public Values<string, Uri>? CourseMode { get; set; }
+        public Values<string, Uri> CourseMode { get; set; }
 
         /// <summary>
         /// A person assigned to instruct or provide instructional assistance for the &lt;a class="localLink" href="http://schema.org/CourseInstance"&gt;CourseInstance&lt;/a&gt;.
         /// </summary>
         [DataMember(Name = "instructor", Order = 207)]
         [JsonConverter(typeof(ValuesConverter))]
-        public OneOrMany<Person>? Instructor { get; set; }
+        public OneOrMany<Person> Instructor { get; set; }
     }
 }
